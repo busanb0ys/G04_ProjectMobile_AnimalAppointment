@@ -1,0 +1,59 @@
+Users 
+user_id (PK) 
+username
+password
+full_name
+phone
+created_at - (วันที่สร้าง)
+
+
+Pets 
+pet_id (PK)
+user_id (FK)
+pet_name 
+species 
+breed 
+bloodtype
+birth_date 
+gender 
+weight 
+allergy
+
+
+Appointments 
+app_id (PK)
+user_id (FK)
+pet_id (FK)
+doc_id (FK)
+reason
+status 
+app_date
+app_time
+
+
+Medical_records 
+record_id (PK)
+pet_id (FK)
+doc_id (FK)
+app_id (FK)
+diagnosis
+treatment_detail
+cost
+treatment_date
+treatment_time
+
+
+Doctors 
+doc_id (PK)
+doc_name
+specialization
+phone
+is_available  (เวลาที่ว่าง)
+
+
+Fact_table 
+app_id (FK)
+user_id (FK)
+pet_id (FK)
+doc_id (FK)
+record_id (FK)
